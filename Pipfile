@@ -1,0 +1,30 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "==4.2.8"
+djangorestframework = "*"
+drf-nested-routers = "*"
+psycopg2 = "*"
+pillow = "*"
+django-jazzmin = "*"
+djoser = "*"
+djangorestframework-simplejwt = "*"
+django-cors-headers = "*"
+django-debug-toolbar = "*"
+django-import-export = "*"
+reportlab = "*"
+django-filter = "*"
+pytz = "*"
+boto3 = "*"
+django-storages = "*"
+qrcode = {extras = ["pil"], version = "*"}
+whitenoise = "*"
+python-dotenv = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
