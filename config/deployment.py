@@ -6,8 +6,8 @@ from .settings import BASE_DIR
 SECRET_KEY = os.environ['SECRET']
 
 
-ALLOWED_HOSTS = ['asoronv.z13.web.core.windows.net']
-CSRF_TRUSTED_ORIGINS = ['asoronv.z13.web.core.windows.net']
+ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME']]
+CSRF_TRUSTED_ORIGINS = ['https://'+os.environ['WEBSITE_HOSTNAME']]
 DEBUG = False
 MIDDLEWARE=[
     "corsheaders.middleware.CorsMiddleware",
@@ -49,5 +49,5 @@ EMAIL_HOST_PASSWORD=os.environ['EMAIL_HOST_PASSWORD']
 
 CORS_ALLOW_ALL_ORIGINS=False
 CORS_ALLOWED_ORIGIN_REGEXES = [
-    'https://asoronv.z13.web.core.windows.net'
+    r'^https://asoronv\.z13\.web\.core\.windows\.net$',
 ]
