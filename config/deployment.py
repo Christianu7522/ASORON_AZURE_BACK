@@ -6,8 +6,8 @@ from .settings import BASE_DIR
 SECRET_KEY = os.environ['SECRET']
 
 
-ALLOWED_HOSTS = ['https://asoronv.z13.web.core.windows.net']
-CSRF_TRUSTED_ORIGINS = ['https://asoronv.z13.web.core.windows.net']
+ALLOWED_HOSTS = ['asoronv.z13.web.core.windows.net']
+CSRF_TRUSTED_ORIGINS = ['asoronv.z13.web.core.windows.net']
 DEBUG = False
 MIDDLEWARE=[
     "corsheaders.middleware.CorsMiddleware",
