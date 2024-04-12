@@ -46,3 +46,8 @@ AWS_S3_REGION_NAME=os.environ['AWS_S3_REGION_NAME']
 EMAIL_HOST_USER=os.environ['EMAIL_HOST_USER']
 EMAIL_PORT=os.environ['EMAIL_PORT']
 EMAIL_HOST_PASSWORD=os.environ['EMAIL_HOST_PASSWORD']
+
+CORS_ALLOW_ALL_ORIGINS=False
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r'^https://asoronv\.z13\.web\.core\.windows\.net$',
+]
