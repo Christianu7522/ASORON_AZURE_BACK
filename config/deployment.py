@@ -50,5 +50,5 @@ EMAIL_HOST_PASSWORD=os.environ['EMAIL_HOST_PASSWORD']
 CORS_ALLOW_ALL_ORIGINS=False
 CORS_ALLOWED_ORIGIN_REGEXES = [
     r'^https://asoronv\.z13\.web\.core\.windows\.net$',
-    r'https://nice-wave-07084660f\.5\.azurestaticapps\.net$'
+    r'^https://asoucab\.com$'
 ]
